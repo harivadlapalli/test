@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Locker Reservation">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Locker Number" value={lockerNumber} onchange={handleLockerNumberChange}></lightning-input>
+            <lightning-input label="Your Name" value={userName} onchange={handleUserNameChange}></lightning-input>
+            <lightning-button variant="brand" label="Reserve Locker" onclick={reserveLocker}></lightning-button>
+            <template if:true={reservationMessage}>
+                <p>{reservationMessage}</p>
+            </template>
+            <template if:true={errorMessage}>
+                <p>{errorMessage}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

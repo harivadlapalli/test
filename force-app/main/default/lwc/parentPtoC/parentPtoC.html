@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Parent To Child Communication Parent">
+        <div class="slds-p-around_large">
+            <lightning-input label="name" lwc:ref="userName"></lightning-input>
+            <lightning-button label="submit" onclick={submitClickHandler}></lightning-button>
+           <c-child-pto-c user-name={parentUserName}></c-child-pto-c>
+        </div>
+    </lightning-card>
+</template>

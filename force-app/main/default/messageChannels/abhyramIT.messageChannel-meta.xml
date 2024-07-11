@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isExposed>true</isExposed>
+        <masterLabel>abhyramIT</masterLabel>
+        <description>Lightning Message Service</description>
+    <lightningMessageFields>
+        <fieldName>firstname</fieldName>
+        <description>FirstName of The Person</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>lastname</fieldName>
+        <description>LastName of The Person</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

@@ -1,0 +1,10 @@
+<template>
+    
+    <lightning-card  title={sendToParent}>
+        <div>
+        <lightning-input type="text" label="Enter some text" onchange={handleChange}></lightning-input>
+    </div>
+    <div><lightning-button variant="base" label="ClickHere" title="Looks like a link" onclick={handleClick} class="slds-m-left_x-small"></lightning-button></div>
+        <lightning-button label="New" slot="actions"></lightning-button>
+    </lightning-card>
+</template>

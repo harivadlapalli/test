@@ -1,0 +1,14 @@
+<template>
+        <lightning-card title="Imporative Method COntacts Records Retriving" icon-name="custom:custom63" >
+            <div class="slds-m-around_medium">
+                <p class="slds-m-around_medium">
+                    <lightning-button label="loadContact" onclick={handleLoad}></lightning-button>
+                </p>
+                <template lwc:if={contacts}>
+                    <template for:each={contacts} for:item="contact">
+                        <p key={contact.Id}>{contact.Name}</p>
+                    </template>    
+                </template>
+            </div>
+        </lightning-card>
+</template>
